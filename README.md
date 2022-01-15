@@ -1,0 +1,37 @@
+A custom version of Uppy with Dashboard and XHRUploader.
+
+## Use
+    <script src="/flexnet-uppy/dist/bundle.js"></script>
+
+    const uppy = new Uppy.Core({ 
+        autoProceed: true,
+        maxFileSize: 8000000
+    });
+    if (document.getElementById("drag-drop-area")) {
+        // Optionally add meta fields
+        uppy.setMeta({
+            meta_1: meta_1,
+            meta_2: meta_2,
+        });
+        uppy
+            .use(Uppy.Dashboard, {
+                target: '#drag-drop-area',
+                inline: true,
+                height: 200,
+                locale: {
+                    strings: { // Danish translation - add your own
+                        dropPasteFiles: 'Slip billeder her, eller %{browse}',
+                        browseFiles: ' Gennemse computer',
+                        cancelUpload: 'Afbryd upload',
+                    }
+                }
+            })
+            .use(Uppy.XHRUpload, { 
+                endpoint: '/path-to-upload-endpoint',
+                fieldName: 'file'
+            })
+            .on('upload-success', (_, response) => {
+                console.log(response);
+            })
+            .on('complete', () => uppy.reset());
+    }
