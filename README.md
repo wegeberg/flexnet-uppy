@@ -1,7 +1,7 @@
 A custom version of Uppy with Dashboard and XHRUploader.
 
 ## Install
-
+Download /dist/bundle.js and include it in your HTML
 
 ## Use
     <script src="/flexnet-uppy/dist/bundle.js"></script>
