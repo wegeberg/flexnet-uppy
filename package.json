@@ -1,7 +1,7 @@
 {
     "name": "flexnet-uppy",
     "version": "1.0.0",
-    "description": "Custom version of Uppy with DashBoard and XHRUpload",
+    "description": "Custom version of Uppy with Dashboard and XHRUpload",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
