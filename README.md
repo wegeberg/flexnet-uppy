@@ -5,7 +5,7 @@ Download /dist/bundle.js and include it in your HTML
 -- OR --
     # git clone https://github.com/wegeberg/flexnet-uppy.git
     # npm install
-    # webpack
+    # npm run build
 
 ## Use
     <script src="/flexnet-uppy/dist/bundle.js"></script>
