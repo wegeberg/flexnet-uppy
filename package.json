@@ -10,13 +10,14 @@
     "author": "Martin Wegeberg, Flexnet",
     "license": "MIT",
     "dependencies": {
-        "@uppy/core": "^2.3.1",
-        "@uppy/dashboard": "^2.3.0",
-        "@uppy/xhr-upload": "^2.1.2"
+        "@uppy/core": "^3.7.1",
+        "@uppy/dashboard": "^3.7.1",
+        "@uppy/xhr-upload": "^3.5.0"
     },
     "devDependencies": {
-        "css-loader": "^6.7.1",
-        "style-loader": "^3.3.1",
-        "webpack-cli": "^4.10.0"
+        "css-loader": "^6.8.1",
+        "style-loader": "^3.3.3",
+        "terser-webpack-plugin": "^5.3.9",
+        "webpack-cli": "^5.1.4"
     }
 }
