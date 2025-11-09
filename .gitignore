@@ -4,3 +4,5 @@
 *.pem
 /.idea/
 /dist/
+/.claude/
+/CLAUDE.md

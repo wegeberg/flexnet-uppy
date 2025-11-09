@@ -1,3 +1,5 @@
+v. 2.0.0 - Nov 8th 2025
+
 A custom version of Uppy with Dashboard and XHRUploader.
 
 ## Install
@@ -40,5 +42,5 @@ Download /dist/bundle.js and include it in your HTML
             .on('upload-success', (_, response) => {
                 console.log(response);
             })
-            .on('complete', () => uppy.reset());
+            .on('complete', () => uppy.clear());
     }
